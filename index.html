@@ -16,6 +16,21 @@
       box-sizing: border-box;
     }
 
+    .card {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin: 20px auto;
+    }
+
+    .video-card {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
@@ -98,8 +113,8 @@
 
   <!-- 视频区域 -->
   <div class="video-container">
-    <video controls playsinline poster="https://i.imgur.com/QkDp3ZL.png">
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline>
+      <source src="assets/xiongmei.mp4" type="video/mp4">
       您的浏览器不支持 HTML5 视频。
     </video>
   </div>
