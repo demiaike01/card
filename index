@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>精彩视频页面</title>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="独家视频发布！">
+  <meta name="twitter:description" content="点击立即观看完整视频，精彩不容错过！">
+  <meta name="twitter:image" content="https://i.imgur.com/QkDp3ZL.png">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+      background: #f2f2f2;
+      color: #222;
+    }
+
+    .video-container {
+      width: 100%;
+      background-color: #000;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .content {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .content h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+    .content p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background: #0077ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #005ecc;
+    }
+
+    /* 小屏适配 */
+    @media (max-width: 600px) {
+      .content {
+        padding: 16px;
+        border-radius: 0;
+      }
+
+      .content h2 {
+        font-size: 1.2rem;
+      }
+
+      .content p {
+        font-size: 0.95rem;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 视频区域 -->
+  <div class="video-container">
+    <video controls playsinline poster="https://i.imgur.com/QkDp3ZL.png">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      您的浏览器不支持 HTML5 视频。
+    </video>
+  </div>
+
+  <!-- 内容区域 -->
+  <div class="content">
+  <h2>🎬 视频已加载完毕！</h2>
+  <p>
+    如果你对刚刚的视频感兴趣，那你一定不想错过我们更多独家内容！<br>
+    👉 我们在 Telegram 上分享最新资源、幕后花絮、精彩预告，还有你不知道的特别福利！
+  </p>
+  <p>
+    📢 点击下方按钮立即加入，抢先获取第一手内容，位置有限，先到先得！
+  </p>
+  <p style="color: red; font-weight: bold;">
+    ⚠️ 如果视频无法播放，请点击右上角用浏览器打开！
+  </p>
+  <a class="btn" href="https://t.me/jisou99001" target="_blank">🔥 立即加入 Telegram</a>
+</div>
+
+</body>
+</html>
