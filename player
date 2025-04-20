@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>海角短片</title>
+
+  <!-- Twitter Player Card Meta 信息 -->
+  <meta name="twitter:card" content="player">
+  <meta name="twitter:title" content="海角视频上线了">
+  <meta name="twitter:description" content="这部短片值得你马上点开看看！">
+  <meta name="twitter:image" content="https://i.imgur.com/QkDp3ZL.png">
+  <meta name="twitter:player" content="https://your-username.github.io/player.html">
+  <meta name="twitter:player:width" content="720">
+  <meta name="twitter:player:height" content="405">
+  <meta name="twitter:player:stream" content="assets/haijiao.mp4">
+  <meta name="twitter:player:stream:content_type" content="video/mp4">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    controls 
+    poster="https://i.imgur.com/QkDp3ZL.png">
+    <source src="assets/haijiao.mp4" type="video/mp4">
+    您的浏览器不支持 HTML5 视频。
+  </video>
+</body>
+</html>
